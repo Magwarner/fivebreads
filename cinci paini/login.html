@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Welcome</title>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <div class="nav_div">
+            <div class="nav">
+                <a href="index.html">Poveste</a>
+                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="biografie.html">Biografie</a>
+                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="rezumat.html">Rezumat</a>
+                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="video.html">Video</a>
+            </div>
+        </div>
+            
+
+
+        <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button> 
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div> 
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="Utilizator" required>
+                    <input type="password" class="input-field" placeholder="Introdu Parola" required>
+                    <input type="checkbox" class="check-box"><span>Ține-mă minte</span>
+                    <button type="submit" class="submit-btn">Intră în cont!</button>
+                    
+                </form>
+
+                <form id="register" class="input-group">
+                    <input type="text" class="input-field" placeholder="Utilizator" required>
+                    <input type="email" class="input-field" placeholder="Email" required>
+                    <input type="text" class="input-field" placeholder="Introdu Parola" required>
+                    <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>  
+            </div>
+        </div>
+
+        <script src="login.js"> </script>
+
+    </body>
+</html>
