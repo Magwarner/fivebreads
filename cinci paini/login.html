@@ -26,8 +26,10 @@
                     <button type="button" class="toggle-btn" onclick="register()">Register</button>
                 </div> 
                 <form id="login" class="input-group">
-                    <input type="text" class="input-field" placeholder="Utilizator" required>
+                    <input type="text" name="username" class="input-field" placeholder="Utilizator" required>
+                    <p id="username-error">*Trebuie de completat</p>
                     <input type="password" class="input-field" placeholder="Introdu Parola" required>
+                    <p id="password-error">*Trebuie de completat</p>
                     <input type="checkbox" class="check-box"><span>Ține-mă minte</span>
                     <button type="submit" class="submit-btn">Intră în cont!</button>
                     
@@ -36,14 +38,17 @@
                 <form id="register" class="input-group">
                     <input type="text" class="input-field" placeholder="Utilizator" required>
                     <input type="email" class="input-field" placeholder="Email" required>
-                    <input type="text" class="input-field" placeholder="Introdu Parola" required>
+                    <input type="password" class="input-field" placeholder="Introdu Parola" required>
                     <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
                     <button type="submit" class="submit-btn">Register</button>
                 </form>  
             </div>
         </div>
 
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="login.js"> </script>
+        <script src="validation.js"> </script>
+        
 
     </body>
 </html>

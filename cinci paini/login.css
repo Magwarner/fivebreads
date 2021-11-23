@@ -135,3 +135,9 @@ span{
 #register{
     left: 450px;
 }
+
+#username-error, #password-error {
+    color: #d9534f;
+    padding: 12px;
+    font-size: 14px;
+}
