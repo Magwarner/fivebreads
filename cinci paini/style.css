@@ -1,8 +1,7 @@
-   
-
-
+body{
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/paine.jpg);
+}
   .maindiv{
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/paine.jpg);
     font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
 }
   

@@ -141,3 +141,30 @@ span{
     padding: 12px;
     font-size: 14px;
 }
+
+/********** Login button ********/
+
+#button {
+    border: 1px solid gold;
+    background-color: gold;
+    padding: 1%;
+    border-radius: 1vw;
+    margin-top: 3%;
+    margin-right: 5vw;
+    width: 10vw;
+    font-size: 1.2vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    position:absolute;
+    top:0;
+    right:0;
+  
+  }
+  
+  #button_div{
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }

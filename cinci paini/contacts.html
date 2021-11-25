@@ -6,13 +6,31 @@
   <title>Contact Form in PHP</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="contacts.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- <form method="post" action="connect.php"></form> -->
+  
 </head>
 
 <body>
+    <div class="nav_div">
+		<div class="nav">
+                        <a href="index.html">Poveste</a>
+			&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+			<a href="biografie.html">Biografie</a>
+			&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+			<a href="rezumat.html">Rezumat</a>
+			&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+			<a href="video.html">Video</a>
+      &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      <a href="contacts.html">Contacte</a>
+            
+			
+		</div>
+		</div>
 
   <div class="container mt-5" class="background">
     <!-- Contact form -->
-    <form action="" name="contactForm" method="post" enctype="multipart/form-data">
+    <form action="contact.php" name="contactForm" method="post" enctype="multipart/form-data">
       <div class="form-group">
         <label>Nume</label>
         <input type="text" class="form-control" name="name" id="name">
@@ -39,7 +57,9 @@
       </div>
 
       <input type="submit" name="send" value="Send" class="btn btn-dark btn-block">
+
     </form>
+    
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
