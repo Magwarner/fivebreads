@@ -17,6 +17,11 @@ $sql = "INSERT INTO `contacte` (`id`, `nume`, `email`, `telefon`, `subiect`, `me
 // insert in database 
 $rs = mysqli_query($con, $sql);
 
-if (mysqli_connect_errno()) {
-    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+if($rs)
+{
+	echo "Trimis cu succes";
+} else {
+    echo"Eroare de server, incercati mai tarziu"
 }
+
+?>
