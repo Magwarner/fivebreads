@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Page Title</title>
+<title>Pagina principala</title>
 <link rel="stylesheet" href="style.css">
 <script src="javascript.js"> </script>
 </head>
@@ -19,6 +19,8 @@
 			<a href="video.html">Video</a>
                         &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                         <a href="contacts.html">Contacte</a>
+                        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                        <a href="feedback.html">Feedback</a>
             
 			
 		</div>
@@ -38,14 +40,42 @@
         </div>
     </div>
 
-    <div class="img_div">
-        <img src="img/bgcincipaini.jpg" class="title_img" title="Cinci Paini">
-    </div>
+        <div class="img_div">
+        <div>
+                
+        </div>
 
-    <div style="border-top: 30px solid black">
+
+<div class="Slideimg">
+
+        
+        <div class="img_div" class="Photoslide">
+        <img src="img/bgcincipaini.jpg" class="title_img" style="width:100%" title="Cinci Paini">
+        </div>  
+
+        <div class="Photoslide"> 
+        <img src="img/bgcincipaini2.jpg" class="title_img" style="width:100%" title="Cinci Paini">
+        </div> 
+
+        <div class="Photoslide">
+        <img src="img/bgcincipaini3.png" class="title_img" style="width:100%" title="Cinci Paini">
+        </div> 
+
+        <a class="prev" onclick="arrow(-1)">&#10094;</a>
+        <a class="next" onclick="arrow(1)">&#10095;</a>
+        </div>
+        </div>
+
+
+    <div id="textascuns">
+    
+    <div style="border-top: 30px solid black" > 
+        
         <div class="poveste">	
             <div class="text">
-                
+
+                <button id="butonascundere" onclick="hide()">Ascunde textul</button>
+
                 <h1 style="font-size: 3vw;text-decoration: underline;">Povestea</h1>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Doi oameni, cunoscuţi unul cu altul, călătoreau odată, vara, pe un drum. Unul avea în traista sa trei pâni, şi celalalt două pâni. De la o vreme, fiindu-le foame, poposesc la umbra unei răchiţi pletoase, lângă o fântână cu ciutură, scoate fiecare pânile ce avea şi se pun să mănânce împreună, ca să aibă mai mare poftă de mâncare. 
                     <br>Tocmai când scoaseră pânile din traiste, iaca un al treile drumeţ, necunoscut, îi ajunge din urmă şi se opreşte lângă dânşii, dându-le ziua bună. Apoi se roagă să-i deie şi lui ceva de mâncare, căci e tare flămând şi n-are nimica merinde la dânsul, nici de unde cumpăra. <br>
@@ -162,11 +192,11 @@
 
 
 
-<div class="centrat">
+<div class="centrat" >
         <button onclick="toTop()" class="button-53" role="button">Înapoi în sus.</button>  
 </div>
 
-
+</div>
 
 
 </div>

@@ -198,6 +198,70 @@ width: 50vw;
 }
 
   
+button{
+  display: block;
+  margin: 0 auto;
+  color: darkred;
+  transition-duration: 1s;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border: 1px solid gold;
+  background-color: gold;
+  padding: 1%;
+  border-radius: 1vw;
+  margin-top: 2%;
+  width: 10vw;
+  font-size: 1.2vw;
+  height: auto;
+
+  
+}
+
+
+.Slideimg {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: auto;
+  padding: 16px;
+  color: cyan;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.Phototext {
+  color: darkred;
+  text-shadow: 3px 3px 5px whitesmoke;
+  bottom: 1px;
+  font-size: 25px;
+  padding: 8px 12px 20px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
 
 
 
+.Photoslide {
+  display: none;
+}
