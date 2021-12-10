@@ -21,7 +21,7 @@ if($rs)
 {
 	echo "Trimis cu succes";
 } else {
-    echo"Eroare de server, incercati mai tarziu"
+    echo"Eroare de server, incercati mai tarziu";
 }
 
 ?>
