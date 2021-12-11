@@ -168,3 +168,25 @@ span{
     justify-content: center;
     align-items: center
   }
+
+
+
+.pop_up2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+}
+
+#pop_up2{
+    width: 50%;
+    height: auto;
+    border: 2px gold;
+    text-align: center;
+    padding: 1%;
+    color: green;
+    background-color: rgba(0,0,0, 0.6);
+    border-radius: 10vw;
+}

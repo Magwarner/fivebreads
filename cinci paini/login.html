@@ -16,7 +16,7 @@
                 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                 <a href="video.html">Video</a>
                             &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-                            <a href="contacts.html">Contacte</a>
+                            <a href="contacts.php">Contacte</a>
                             &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                         <a href="feedback.html">Feedback</a>
                 
@@ -41,7 +41,7 @@
                     <input type="password" id="form_password" class="input-field" placeholder="Introdu Parola" required>
                     <p id="password-error">*Trebuie de completat</p>
                     
-                    <button type="submit" class="submit-btn">Intră în cont!</button>
+                    <button id="send" type="submit" class="submit-btn">Intră în cont!</button>
                     
                 </form>
 
@@ -52,8 +52,18 @@
                     
                     <button type="submit" class="submit-btn">Register</button>
                 </form>  
+
             </div>
+    
+           <div id="pop_up2" class="pop_up2" style="opacity: 0">
+                     <h2>Form completed succesfully</h2>
+            </div>
+
         </div>
+
+
+
+
 
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="login.js"> </script>
@@ -87,7 +97,7 @@
                 }
             }
 
-            function check_username() {
+            function check_password() {
                 var password_lenght = $("form_password").val().lenght;
                 if (password_lenght < 8) {
                     $("#password-error").html("Introduceti cel putin 8 caractere");
@@ -100,7 +110,26 @@
                 }
             }
                 
+
+
+           
+
         </script>
+
+       <script type="text/javascript">
+            var user = $("#form_username").val() ;
+            var password = $("#form_password").val();
+
+
+            $("#send").click(function() {
+     if (user != '' && password != '') {
+         $("#pop_up").css("opacity", "1"); 
+     }
+     
+});
+
+
+       </script>
 
     </body>
 </html>
